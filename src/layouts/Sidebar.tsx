@@ -10,10 +10,10 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="max-w-[280px] w-full h-full bg-[var(--bg-muted)] rounded-xl py-4 px-6 flex flex-col justify-between">
+    <div className="w-[280px] max-md:w-full h-full bg-[var(--bg-muted)] rounded-xl py-4 px-6 flex flex-col justify-between">
       {/* Profile */}
-      <div className=" py-4 px-2 flex flex-col gap-5 items-center h-fit">
-        <div className="w-[6rem] h-[6rem]">
+      <div className="py-4 px-2 flex flex-col gap-5 max-md:gap-2 items-center h-fit">
+        <div className="w-[6rem] h-[6rem] max-md:w-[5rem] max-md:h-[5rem]">
           <img
             src={profile}
             alt="my profile picture"
@@ -22,17 +22,17 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h2 className="font-bold text-lg tracking-tight">
+          <h2 className="font-bold text-lg max-md:text-md tracking-tight">
             Fernando Ordiales
           </h2>
-          <p className="font-semibold text-xs tracking-tight py-1.5 px-4 bg-[var(--bg-component)] rounded-lg text-center">
+          <p className="font-semibold text-xs tracking-tight py-1.5 px-4 max-md:py-1 max-md:px-2.5 bg-[var(--bg-component)] rounded-lg text-center">
             Future Software Developer
           </p>
         </div>
       </div>
 
       {/* Contacts Links */}
-      <div className="py-2 px-4 flex flex-col items-center w-full h-full overflow-hidden gap-8">
+      <div className="py-2 px-4 flex flex-col items-center w-full h-full overflow-hidden gap-8 max-md:gap-4 max-md:grid max-md:grid-cols-2 max-md:mb-5 max-sm:grid-cols-1">
         {contacts.map((contact: Contacts, index: number) => (
           <Tooltip key={index}>
             <TooltipTrigger className="flex justify-start items-center w-full h-auto gap-5">
