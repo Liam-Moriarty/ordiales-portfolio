@@ -1,5 +1,5 @@
 const CantFindPage = () => {
-  return <div>CantFindPage</div>;
+  return <div className="py-5 px-10">CantFindPage</div>;
 };
 
 export default CantFindPage;

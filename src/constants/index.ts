@@ -7,7 +7,6 @@ import {
   LuInstagram,
   LuLinkedin,
   LuGithub,
-  LuHouse,
   LuUserRoundSearch,
   LuFileText,
   LuCodeXml,
@@ -61,8 +60,7 @@ export const socials: Socials[] = [
 ];
 
 export const links: Links[] = [
-  { icon: LuHouse, path: "/", label: "Home" },
-  { icon: LuUserRoundSearch, path: "/about", label: "About" },
+  { icon: LuUserRoundSearch, path: "/", label: "About" },
   { icon: LuFileText, path: "/resume", label: "Resume" },
   { icon: LuCodeXml, path: "/projects", label: "Projects" },
   { icon: LuPhoneIncoming, path: "/contacts", label: "Contacts" },

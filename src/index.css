@@ -162,4 +162,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  ::-webkit-scrollbar {
+    @apply w-[3px] h-[2px] bg-[var(--bg-component)];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[var(--primary-ctc)] rounded-md;
+  }
 }

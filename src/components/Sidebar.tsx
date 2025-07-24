@@ -10,7 +10,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-[280px] h-full bg-[var(--bg-muted)] rounded-xl py-4 px-6 flex flex-col justify-between">
+    <div className="w-auto h-full bg-[var(--bg-muted)] rounded-xl py-4 px-6 flex flex-col justify-between">
       {/* Profile */}
       <div className="py-4 px-2 flex flex-col gap-5 items-center h-fit">
         <div className="w-[6rem] h-[6rem]">

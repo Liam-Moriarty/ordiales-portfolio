@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import { Board } from "./layouts";
 import Navigation from "./layouts/Navigation";
-import { About, CantFindPage, Contacts, Home, Projects, Resume } from "./pages";
+import { About, CantFindPage, Contacts, Projects, Resume } from "./pages";
 
 const App = () => {
   return (
@@ -11,8 +11,7 @@ const App = () => {
       <Routes>
         {/* all the routes inside of this Route will render in Board component */}
         <Route path="/" element={<Board />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route index element={<About />} />
           <Route path="resume" element={<Resume />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contacts" element={<Contacts />} />

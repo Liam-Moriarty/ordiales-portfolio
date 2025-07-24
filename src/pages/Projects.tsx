@@ -1,5 +1,5 @@
 const Projects = () => {
-  return <div>Projects</div>;
+  return <div className="py-5 px-10">Projects</div>;
 };
 
 export default Projects;

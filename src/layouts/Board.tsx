@@ -1,8 +1,14 @@
+import Navbar from "@/components/Navbar";
 import { Outlet } from "react-router";
 
 const Board = () => {
   return (
-    <div className="w-full h-full max-md:h-[1000px] bg-[var(--bg-muted)] rounded-xl p-5 max-md:rounded-none max-md:py-18 max-md:px-5">
+    <div
+      className="relative w-full h-full bg-[var(--bg-muted)] rounded-xl
+      max-md:h-[1000px] max-md:rounded-none max-md:py-18 max-md:px-5 overflow-y-scroll"
+    >
+      <Navbar />
+
       {/* all child will render here */}
       <Outlet />
     </div>
