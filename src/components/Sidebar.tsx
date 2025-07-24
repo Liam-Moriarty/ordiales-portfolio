@@ -35,7 +35,7 @@ const Sidebar = () => {
       <div className="py-2 px-4 flex flex-col items-center w-full h-full overflow-hidden gap-8">
         {contacts.map((contact: Contacts, index: number) => (
           <Tooltip key={index}>
-            <TooltipTrigger className="flex justify-start items-center w-full h-auto gap-5">
+            <TooltipTrigger className="flex justify-start items-center w-full h-auto gap-3">
               <span className="rounded-lg py-2 px-3 bg-[var(--bg-component)]">
                 <contact.icon className="text-xl text-[var(--primary-ctc)]" />
               </span>{" "}
@@ -62,7 +62,7 @@ const Sidebar = () => {
       </div>
 
       {/* Social Links */}
-      <div className="py-2 px-4 flex justify-center items-center gap-3 h-fit">
+      <div className="py-2 px-4 flex justify-center items-center gap-2 h-fit">
         {socials.map((social: Socials, index: number) => (
           <Tooltip key={index}>
             <TooltipTrigger className="rounded-md py-2.5 px-2 bg-[var(--bg-component)]">
