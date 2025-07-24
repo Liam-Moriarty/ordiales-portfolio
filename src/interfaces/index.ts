@@ -7,8 +7,19 @@ export interface Contacts {
   tooltip: boolean;
 }
 
-export interface Links {
+export interface Socials {
   icon: IconType;
   tooltip: string;
   to: string;
+}
+
+export interface Links {
+  icon?: IconType;
+  path: string;
+  label: string;
+}
+
+export interface MenuBarProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }

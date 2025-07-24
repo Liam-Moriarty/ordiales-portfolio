@@ -1,4 +1,4 @@
-import Sidebar from "./Sidebar";
+import Navigation from "./Navigation";
 import Board from "./Board";
 
-export { Sidebar, Board };
+export { Navigation, Board };

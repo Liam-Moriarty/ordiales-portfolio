@@ -7,8 +7,13 @@ import {
   LuInstagram,
   LuLinkedin,
   LuGithub,
+  LuHouse,
+  LuUserRoundSearch,
+  LuFileText,
+  LuCodeXml,
+  LuPhoneIncoming,
 } from "react-icons/lu";
-import type { Contacts, Links } from "../interfaces";
+import type { Contacts, Links, Socials } from "../interfaces";
 
 export const contacts: Contacts[] = [
   {
@@ -32,7 +37,7 @@ export const contacts: Contacts[] = [
   },
 ];
 
-export const links: Links[] = [
+export const socials: Socials[] = [
   {
     icon: LuFacebook,
     tooltip: "Facebook",
@@ -53,4 +58,12 @@ export const links: Links[] = [
     tooltip: "Github",
     to: "https://github.com/Liam-Moriarty",
   },
+];
+
+export const links: Links[] = [
+  { icon: LuHouse, path: "/", label: "Home" },
+  { icon: LuUserRoundSearch, path: "/about", label: "About" },
+  { icon: LuFileText, path: "/resume", label: "Resume" },
+  { icon: LuCodeXml, path: "/projects", label: "Projects" },
+  { icon: LuPhoneIncoming, path: "/contacts", label: "Contacts" },
 ];
