@@ -46,6 +46,10 @@ body {
   -webkit-line-clamp: 1; /* Show only 2 lines */
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* shadcn themes */
 
 @theme inline {

@@ -23,3 +23,9 @@ export interface MenuBarProps {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export interface AboutCards {
+  icon: IconType;
+  title: string;
+  description: string;
+}

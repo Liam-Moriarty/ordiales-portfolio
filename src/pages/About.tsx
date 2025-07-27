@@ -1,10 +1,12 @@
+import Titles from "@/components/Titles";
+import Cards from "@/components/Cards";
+
 const About = () => {
   return (
-    <div className="w-full h-[1000px] px-8 flex flex-col">
+    <div className="w-full h-fit py-4 px-8 max-sm:py-0 max-sm:px-0 flex flex-col gap-5">
+      {/* Header */}
       <div className="w-full h-fit flex flex-col gap-5">
-        <h1 className="font-bold text-2xl text-[var(--text-ctc)] capitalize tracking-wider">
-          About Me
-        </h1>
+        <Titles label="About Me" />
 
         <p className="font-medium text-md tracking-wide leading-7">
           &emsp;&emsp;&emsp;Motivated and detail-oriented developer with a
@@ -17,6 +19,13 @@ const About = () => {
           environments. Eager to contribute to innovative teams and continuously
           grow in both development and data-driven roles.
         </p>
+      </div>
+
+      {/* Cards */}
+      <div className="w-full h-fit flex flex-col gap-5">
+        <Titles label="What I'm Doing" />
+
+        <Cards />
       </div>
     </div>
   );

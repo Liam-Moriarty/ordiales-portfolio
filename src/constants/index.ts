@@ -11,8 +11,12 @@ import {
   LuFileText,
   LuCodeXml,
   LuPhoneIncoming,
+  LuMonitorSmartphone,
+  LuCodesandbox,
+  LuDatabaseZap,
+  LuLayers3,
 } from "react-icons/lu";
-import type { Contacts, Links, Socials } from "../interfaces";
+import type { Contacts, Links, Socials, AboutCards } from "../interfaces";
 
 export const contacts: Contacts[] = [
   {
@@ -64,4 +68,31 @@ export const links: Links[] = [
   { icon: LuFileText, path: "/resume", label: "Resume" },
   { icon: LuCodeXml, path: "/projects", label: "Projects" },
   { icon: LuPhoneIncoming, path: "/contacts", label: "Contacts" },
+];
+
+export const aboutCards: AboutCards[] = [
+  {
+    icon: LuMonitorSmartphone,
+    title: "Frontend Development",
+    description:
+      "Crafting responsive and user-friendly interfaces using modern web technologies to deliver seamless user experiences.",
+  },
+  {
+    icon: LuCodesandbox,
+    title: "Backend Development",
+    description:
+      "Building robust server-side logic, APIs, and database integrations to power applications behind the scenes.",
+  },
+  {
+    icon: LuDatabaseZap,
+    title: "Data Analysis",
+    description:
+      "Transforming raw data into actionable insights through visualization, statistical analysis, and data storytelling.",
+  },
+  {
+    icon: LuLayers3,
+    title: "Fullstack Development",
+    description:
+      "Developing complete web applications from frontend to backend, ensuring end-to-end functionality and performance.",
+  },
 ];

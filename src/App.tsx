@@ -5,7 +5,7 @@ import { About, CantFindPage, Contacts, Projects, Resume } from "./pages";
 
 const App = () => {
   return (
-    <main className="relative w-full h-screen flex justify-center gap-5 py-10 px-5 max-md:py-0 max-md:px-0">
+    <main className="relative w-full h-screen flex justify-center gap-5 py-10 px-30 max-lg:px-5 max-lg:py-5 max-md:py-0 max-md:px-0">
       <Navigation />
 
       <Routes>
