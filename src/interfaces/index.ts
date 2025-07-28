@@ -29,3 +29,10 @@ export interface AboutCards {
   title: string;
   description: string;
 }
+
+export interface ResumeContent {
+  title: string;
+  date: string;
+  details?: string;
+  course?: string;
+}

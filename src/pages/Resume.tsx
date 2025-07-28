@@ -1,5 +1,6 @@
 import Timeline from "@/components/Timeline";
 import Titles from "@/components/Titles";
+import { educationalBackground, workExperience } from "@/constants";
 
 const Resume = () => {
   return (
@@ -8,13 +9,15 @@ const Resume = () => {
       <div className="w-full h-fit flex flex-col gap-5">
         <Titles label="Work Experience" />
 
-        <Timeline />
+        <Timeline contents={workExperience} />
       </div>
 
       {/* Educational Background */}
-      {/* <div className="w-full h-fit flex flex-col gap-5">
+      <div className="w-full h-fit flex flex-col gap-5">
         <Titles label="Educational Background" />
-      </div> */}
+
+        <Timeline contents={educationalBackground} />
+      </div>
     </div>
   );
 };
