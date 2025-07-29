@@ -1,5 +1,8 @@
-import Titles from "@/components/Titles";
 import Cards from "@/components/Cards";
+import Titles from "@/components/Titles";
+import { aboutCards } from "@/constants";
+import type { CardsProps } from "@/interfaces";
+// import Cards from "@/components/Cards";
 
 const About = () => {
   return (
@@ -25,7 +28,13 @@ const About = () => {
       <div className="w-full h-fit flex flex-col gap-5">
         <Titles label="What I'm Doing" />
 
-        <Cards />
+        {/* <Cards /> */}
+
+        <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-5 w-full h-fit">
+          {aboutCards.map((about: CardsProps, index: number) => (
+            <Cards key={index} data={about} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ import type {
   Contacts,
   Links,
   Socials,
-  AboutCards,
+  CardsProps,
   ResumeContent,
 } from "../interfaces";
 
@@ -76,7 +76,7 @@ export const links: Links[] = [
   { icon: LuPhoneIncoming, path: "/contacts", label: "Contacts" },
 ];
 
-export const aboutCards: AboutCards[] = [
+export const aboutCards: CardsProps[] = [
   {
     icon: LuMonitorSmartphone,
     title: "Frontend Development",

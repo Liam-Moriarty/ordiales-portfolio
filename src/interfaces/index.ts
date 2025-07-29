@@ -24,10 +24,12 @@ export interface MenuBarProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export interface AboutCards {
+export interface CardsProps {
   icon: IconType;
   title: string;
   description: string;
+  hasSideIcon?: boolean;
+  hasFooter?: boolean;
 }
 
 export interface ResumeContent {
