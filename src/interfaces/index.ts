@@ -25,11 +25,12 @@ export interface MenuBarProps {
 }
 
 export interface CardsProps {
-  icon: IconType;
+  icon?: IconType;
   title: string;
   description: string;
-  hasSideIcon?: boolean;
-  hasFooter?: boolean;
+  image?: string[];
+  link?: string;
+  techStack?: string[];
 }
 
 export interface ResumeContent {

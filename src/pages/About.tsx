@@ -32,7 +32,7 @@ const About = () => {
 
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-5 w-full h-fit">
           {aboutCards.map((about: CardsProps, index: number) => (
-            <Cards key={index} data={about} />
+            <Cards key={index} data={about} footer={false} titleIcon={true} />
           ))}
         </div>
       </div>

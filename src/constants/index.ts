@@ -24,6 +24,40 @@ import type {
   ResumeContent,
 } from "../interfaces";
 
+import macbookNetflix from "../assets/netflix/macbook-netflix.png";
+import iphoneNetflix from "../assets/netflix/iphone-netflix.png";
+import tabletNetflix from "../assets/netflix/tablet-netflix.png";
+
+import macbookOor from "../assets/oor/macbook-oor.png";
+import iphoneOor from "../assets/oor/iphone-oor.png";
+import tabletOor from "../assets/oor/tablet-oor.png";
+
+import macbookNike from "../assets/nike/macbook-nike.png";
+import iphoneNike from "../assets/nike/iphone-nike.png";
+import tabletNike from "../assets/nike/tablet-nike.png";
+
+import macbookRental from "../assets/rental/macbook-rental.png";
+import iphoneRental from "../assets/rental/iphone-rental.png";
+import tabletRental from "../assets/rental/tablet-rental.png";
+
+import macbookDlc from "../assets/dlc/macbook-dlc.png";
+import iphoneDlc from "../assets/dlc/iphone-dlc.png";
+import tabletDlc from "../assets/dlc/tablet-dlc.png";
+
+import macbookEcommerce from "../assets/ecommerce/macbook-ecommerce.png";
+import iphoneEcommerce from "../assets/ecommerce/iphone-ecommerce.png";
+import tabletEcommerce from "../assets/ecommerce/tablet-ecommerce.png";
+
+import react from "../assets/techStack/react.png";
+import javascript from "../assets/techStack/javascript.png";
+import tailwind from "../assets/techStack/tailwind.png";
+import html from "../assets/techStack/html.png";
+import css from "../assets/techStack/css.png";
+import nodejs from "../assets/techStack/nodejs.png";
+import express from "../assets/techStack/express.png";
+import mongodb from "../assets/techStack/mongodb.png";
+import redux from "../assets/techStack/redux.png";
+
 export const contacts: Contacts[] = [
   {
     label: "Email",
@@ -144,5 +178,54 @@ export const educationalBackground: ResumeContent[] = [
     title: "F. Serrano Sr. Elementary School",
     date: "2008 - 2014",
     course: "Elementary (Primary Education)",
+  },
+];
+
+export const projects: CardsProps[] = [
+  {
+    title: "Full Stack Admin Dashboard with Data Visualization",
+    description:
+      "This Full Stack Admin Dashboard for DLC Equipment Corporation is built with the MERN stack and Redux, styled with Tailwind CSS for a modern and responsive interface. It features powerful data visualization tools that provide real-time insights into operations, enabling efficient monitoring, analysis, and decision-making across the company",
+    image: [macbookDlc, iphoneDlc, tabletDlc],
+    techStack: [mongodb, react, express, nodejs, redux, tailwind],
+  },
+  {
+    title: "Full Stack Ecommerce Application",
+    description:
+      "This Full Stack E-Commerce Application for DLC Equipment Corporation is developed using the MERN stack, Redux, and Tailwind CSS, delivering a seamless and responsive shopping experience for customers. It is fully integrated with the company’s Admin Dashboard, enabling synchronized product management, order tracking, and real-time data updates across both platforms.",
+    image: [macbookEcommerce, iphoneEcommerce, tabletEcommerce],
+    techStack: [mongodb, react, express, nodejs, redux, tailwind],
+  },
+  {
+    title: "One OK Rock",
+    description:
+      "This website is a fan-made tribute to the Japanese rock band ONE OK ROCK, featuring a sleek, dark-themed design with sections for band info, discography, and member profiles. It showcases interactive elements and smooth animations to enhance the user experience for fans and visitors.",
+    image: [macbookOor, iphoneOor, tabletOor],
+    link: "https://one-ok-rock.vercel.app/",
+    techStack: [react, javascript, tailwind, nodejs],
+  },
+  {
+    title: "Nike Website",
+    description:
+      "This is a modern Nike landing page concept featuring bold typography, high-quality product imagery, and a clean, minimalist layout. It emphasizes a responsive design with a strong visual focus on athletic footwear branding.",
+    image: [macbookNike, iphoneNike, tabletNike],
+    link: "https://nike-landing-page-nu-one.vercel.app/",
+    techStack: [react, javascript, tailwind, nodejs],
+  },
+  {
+    title: "Car Rental Site",
+    description:
+      "This site offers a curated collection of luxury and high-performance sports cars for both rental and purchase, promising a seamless and prestigious driving experience. It highlights key stats—such as over 10,000 satisfied clients and a decade in the industry—alongside glowing customer testimonials and partnered elite automotive brands.",
+    image: [macbookRental, iphoneRental, tabletRental],
+    link: "https://car-rental-site-phi.vercel.app/",
+    techStack: [html, javascript, css],
+  },
+  {
+    title: "Netflix Clone",
+    description:
+      "This is a Netflix clone that replicates the popular streaming platform’s interface, featuring movie thumbnails, category rows, and a dark-themed layout. It provides a visually familiar user experience with responsive design and clean content organization.",
+    image: [macbookNetflix, iphoneNetflix, tabletNetflix],
+    link: "https://stream-clone-pi-beige.vercel.app/",
+    techStack: [react, javascript, tailwind, nodejs],
   },
 ];
