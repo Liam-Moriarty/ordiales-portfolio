@@ -39,3 +39,14 @@ export interface ResumeContent {
   details?: string;
   course?: string;
 }
+
+export interface techItems {
+  src: string;
+  alt: string;
+}
+
+export interface OrbitalCirlce {
+  radius: number;
+  reverse: boolean;
+  items: techItems[];
+}

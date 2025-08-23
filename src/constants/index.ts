@@ -10,7 +10,7 @@ import {
   LuUserRoundSearch,
   LuFileText,
   LuCodeXml,
-  LuPhoneIncoming,
+  // LuPhoneIncoming,
   LuMonitorSmartphone,
   LuCodesandbox,
   LuDatabaseZap,
@@ -22,6 +22,7 @@ import type {
   Socials,
   CardsProps,
   ResumeContent,
+  OrbitalCirlce,
 } from "../interfaces";
 
 import macbookNetflix from "../assets/netflix/macbook-netflix.png";
@@ -57,6 +58,11 @@ import nodejs from "../assets/techStack/nodejs.png";
 import express from "../assets/techStack/express.png";
 import mongodb from "../assets/techStack/mongodb.png";
 import redux from "../assets/techStack/redux.png";
+import vue from "../assets/techStack/vue.png";
+import typescript from "../assets/techStack/typescript.png";
+import python from "../assets/techStack/python.png";
+import mysql from "../assets/techStack/mysql.png";
+import java from "../assets/techStack/java.png";
 
 export const contacts: Contacts[] = [
   {
@@ -107,7 +113,7 @@ export const links: Links[] = [
   { icon: LuUserRoundSearch, path: "/", label: "About" },
   { icon: LuFileText, path: "/resume", label: "Resume" },
   { icon: LuCodeXml, path: "/projects", label: "Projects" },
-  { icon: LuPhoneIncoming, path: "/contacts", label: "Contacts" },
+  // { icon: LuPhoneIncoming, path: "/contacts", label: "Contacts" },
 ];
 
 export const aboutCards: CardsProps[] = [
@@ -227,5 +233,46 @@ export const projects: CardsProps[] = [
     image: [macbookNetflix, iphoneNetflix, tabletNetflix],
     link: "https://stream-clone-pi-beige.vercel.app/",
     techStack: [react, javascript, tailwind, nodejs],
+  },
+];
+
+export const orbitingCircles: OrbitalCirlce[] = [
+  {
+    radius: 50,
+    reverse: false,
+    items: [
+      { src: html, alt: "HTML" },
+      { src: css, alt: "CSS" },
+      { src: javascript, alt: "JavaScript" },
+    ],
+  },
+  {
+    radius: 100,
+    reverse: true,
+    items: [
+      { src: mongodb, alt: "MongoDB" },
+      { src: react, alt: "React" },
+      { src: express, alt: "Express" },
+      { src: nodejs, alt: "NodeJS" },
+    ],
+  },
+  {
+    radius: 150,
+    reverse: false,
+    items: [
+      { src: tailwind, alt: "Tailwind" },
+      { src: redux, alt: "Redux" },
+      { src: vue, alt: "Vue" },
+      { src: typescript, alt: "TypeScript" },
+    ],
+  },
+  {
+    radius: 200,
+    reverse: true,
+    items: [
+      { src: python, alt: "Python" },
+      { src: mysql, alt: "MySQL" },
+      { src: java, alt: "Java" },
+    ],
   },
 ];

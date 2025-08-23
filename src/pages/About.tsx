@@ -1,8 +1,9 @@
 import Cards from "@/components/Cards";
 import Titles from "@/components/Titles";
-import { aboutCards } from "@/constants";
-import type { CardsProps } from "@/interfaces";
-// import Cards from "@/components/Cards";
+import { aboutCards, orbitingCircles } from "@/constants";
+import type { CardsProps, OrbitalCirlce } from "@/interfaces";
+
+import { OrbitingCircles } from "@/components/OrbitingCircle";
 
 const About = () => {
   return (
@@ -35,6 +36,29 @@ const About = () => {
             <Cards key={index} data={about} footer={false} titleIcon={true} />
           ))}
         </div>
+      </div>
+
+      <Titles label="Technologies I Use" />
+
+      {/* Tech Stack */}
+      <div className="relative overflow-hidden h-[440px] w-full flex justify-center items-center">
+        {orbitingCircles.map((tech: OrbitalCirlce, index: number) => (
+          <OrbitingCircles
+            key={index}
+            radius={tech.radius}
+            reverse={tech.reverse}
+          >
+            {tech.items.map((img, index) => (
+              <span key={index} className="w-13 h-13">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="object-contain w-full h-full"
+                />
+              </span>
+            ))}
+          </OrbitingCircles>
+        ))}
       </div>
     </div>
   );
