@@ -5,8 +5,27 @@ import { contacts, links, socials } from "@/constants";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { Link, NavLink } from "react-router";
 import { LuCircleAlert } from "react-icons/lu";
+import { useEffect, useRef } from "react";
 
 const MenuBar = ({ isOpen, setIsOpen }: MenuBarProps) => {
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen, setIsOpen]);
+
   return (
     <>
       {isOpen ? (
@@ -22,8 +41,9 @@ const MenuBar = ({ isOpen, setIsOpen }: MenuBarProps) => {
       )}
 
       <div
+        ref={menuRef}
         className={`${isOpen ? "block" : "hidden"} fixed top-0 left-0 z-40
-        bg-[var(--bg-component)] w-[300px] flex flex-col justify-between items-start h-full pt-14 py-5 px-5 gap-3`}
+        bg-[var(--bg-component)] w-[300px] flex flex-col items-start h-full pt-14 py-5 px-5 gap-3`}
       >
         {/* profile & contacts*/}
         <div className="w-full h-fit flex flex-col gap-5">
@@ -84,12 +104,12 @@ const MenuBar = ({ isOpen, setIsOpen }: MenuBarProps) => {
           </div>
         </div>
 
-        <p className="text-xs font-semibold tracking-wide text-[var(--text-muted)]">
-          Explore more...
-        </p>
-
         {/* navigation links */}
-        <div className="w-full h-fit flex flex-col gap-2">
+        <div className="w-full h-full flex flex-col gap-2 mt-10">
+          <p className="text-xs font-semibold tracking-wide text-[var(--text-muted)]">
+            Explore more...
+          </p>
+
           {links.map((link: Links, index: number) => (
             <div key={index} className="flex justify-start items-center gap-2">
               <span className="rounded-lg py-2 px-2.5 bg-[var(--bg-muted)]">
