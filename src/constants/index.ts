@@ -231,7 +231,7 @@ export const projects: CardsProps[] = [
     description:
       "This is a Netflix clone that replicates the popular streaming platform’s interface, featuring movie thumbnails, category rows, and a dark-themed layout. It provides a visually familiar user experience with responsive design and clean content organization.",
     image: [macbookNetflix, iphoneNetflix, tabletNetflix],
-    link: "https://stream-clone-pi-beige.vercel.app/",
+    // link: "https://stream-clone-pi-beige.vercel.app/",
     techStack: [react, javascript, tailwind, nodejs],
   },
 ];
