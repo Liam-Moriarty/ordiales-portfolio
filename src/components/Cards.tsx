@@ -1,5 +1,5 @@
 import type { CardsProps } from "@/interfaces";
-import defaultImage from "../assets/anti-social.png";
+import defaultImage from "../assets/grad-pic.png";
 import Button from "./Button";
 
 import {

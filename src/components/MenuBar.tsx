@@ -1,6 +1,6 @@
 import type { Contacts, Links, MenuBarProps, Socials } from "@/interfaces";
 import { LuMenu, LuX } from "react-icons/lu";
-import profile from "../assets/anti-social.png";
+import profile from "../assets/grad-pic.png";
 import { contacts, links, socials } from "@/constants";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { Link, NavLink } from "react-router";

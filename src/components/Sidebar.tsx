@@ -1,5 +1,5 @@
 import { contacts, socials } from "../constants";
-import profile from "../assets/anti-social.png";
+import profile from "../assets/grad-pic.png";
 import type { Contacts, Socials } from "../interfaces";
 import { Link } from "react-router";
 import {
